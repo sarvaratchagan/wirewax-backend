@@ -1,0 +1,19 @@
+{
+    "ext": "js",
+    "restartable": "rs",
+    "ignore": [
+        "\\.git",
+        "node_modules/*",
+        "npm-debug.log",
+        "node_modules/.*.*/node_modules",
+        "tests/*"
+    ],
+    "events": {
+        "restart": "echo $FILENAME"
+    },
+    "verbose": true,
+    "watch": [
+        "server/",
+        "index.js"
+    ]
+}
